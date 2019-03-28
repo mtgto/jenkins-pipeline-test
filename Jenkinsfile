@@ -4,6 +4,7 @@ pipeline {
 			stage('test') {
 				steps {
 					echo "${GIT_COMMIT}"
+					sh "cat .git/FETCH_HEAD"
 				}
 			}
 		}
