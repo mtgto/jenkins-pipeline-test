@@ -4,7 +4,6 @@ pipeline {
 			stage('test') {
 				steps {
 					echo "${GIT_COMMIT}"
-					echo "Hello!"
 				}
 			}
 		}
